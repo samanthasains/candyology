@@ -67,7 +67,7 @@ Here's a box plot, showing the outliers in total purchases.
 
 Here's the adjusted bar chart.
 
-![Candy Bar](https://github.com/slobanwala1/candyology/blob/main/Images/AdjustedCandyBar.png)
+![Candy Bar](https://github.com/slobanwala1/candyology/blob/main/Images/labeledadjustedcandybar.png?raw=true)
 
 Next I looked at total candy purchased, by brand, over all. Now this is just the top three choices, by state, but in this list, there was a little bit more chocolate -- Snickers, M&Ms, Reese's and Hershey kisses were in the top 10.
 
@@ -79,22 +79,70 @@ Lastly I looked to see if there is any correlation between candy purchases and d
 
 ![Scatter Plot Line](https://github.com/slobanwala1/candyology/blob/main/Images/scatterplotline.png)
 
-The only overlap between the top ten candies purchased from CandyStore.com and candies ranked from FiveThirtyEight are Reese's Peanut Butter Cups and Snickers, which is only 20% of the top ten, indicating a weak correlation between the two measures of favorite candy.
+### Question Three - What is the relationship between candy consumption, dental health, health expenditure, and GDP for the top 5 retail and top 5 consumption countries?
 
-### Question Three - What is the relationship between candy consumption, health expenditure, GDP, and dental health for the top 5 retail and top 5 consumption countries?
+So our null hypothesis for this layer of the project was that there's no relationship between these data points. First we have to understand how the relation works.
+Higher candy consumption means a greater sugar intake, and other processed ingredients which would lead to dental health information being affected by it. If more people
+go to a doctor the health expenditure would go up for a Country and finally paying for medical would increase GDP. We wanted to do top 5 retail and top 5 consumption
+countries but had to lower dataset due to lack of data we found. So we decided to do the top 3 consumption (US, Canada, Brazil) and top 2 production(China, Russia).
 
-Shanil enter write up here including graphs in the format below
-![alt text](githublink "alt_text")
+First lets look at the dental info. Sadly only one dataset was publicly available:
+
+![Dental Visits Graph](https://github.com/slobanwala1/candyology/blob/main/Images/DentalVisitsGraph.png)
+
+From this we can see the US doesn't have that high rate of visits while Russia and Canada do and Brazil which makes sense as those two have a high consumption while the US goes against the correlation.
+So we cant definitely say theirs a positive relation but there is something there as its only one year of data so we can only take it for what it is.
+
+Next we look at sugar consumption, Government health expenditure, and GDP relations over time per country.
+
+![Sugar Consumption Graph](https://github.com/slobanwala1/candyology/blob/main/Images/SugarConsumptionGraph.png)
+
+![Govt. Health Expend. Graph](https://github.com/slobanwala1/candyology/blob/main/Images/GovHealthExpendGraph.png)
+
+![GDP Graph](https://github.com/slobanwala1/candyology/blob/main/Images/GDPGraph.png)
+
+From this we can see that there's a clear relation with these variables as the higher the Sugar consumption the higher the gov health expenditure and higher the GDP graph. How does GDP relate in all this though?
+Next we look at GDP vs Gov Health expenditure:
+
+![GDP vs Govt. Health Expend. Graph](https://github.com/slobanwala1/candyology/blob/main/Images/GDPVsGovHealthExpend.png)
+
+In here its harder to see due to limitations of unit weight but a higher GDP correlates to higher Gov Health Expenditure.
+
+Finally we try to see a correlation between Sugar consumption and Gov Health Expend. for each country
+
+![Sugar Consump. vs Gov Health Expend. for US](https://github.com/slobanwala1/candyology/blob/main/Images/SugarConsumpVsGovHealthExpendUS.png)
+
+![Sugar Consump. vs Gov Health Expend. for CA](https://github.com/slobanwala1/candyology/blob/main/Images/SugarConsumpVsGovHealthExpendCA.png)
+
+![Sugar Consump. vs Gov Health Expend. for BR](https://github.com/slobanwala1/candyology/blob/main/Images/SugarConsumpVsGovHealthExpendBR.png)
+
+![Sugar Consump. vs Gov Health Expend. for CH](https://github.com/slobanwala1/candyology/blob/main/Images/SugarConsumpVsGovHealthExpendCH.png)
+
+![Sugar Consump. vs Gov Health Expend. for RU](https://github.com/slobanwala1/candyology/blob/main/Images/SugarConsumpVsGovHealthExpendRU.png)
+
+The issue with less data is correlation is much harder to get a concrete number however the golden goose of this lot is Canada as its correlation is very strong with higher Sugar Consumption = higher Gov health expenditure.
+Same with if its lower making the other lower. The others have a very low correlation but that's a lack of enough years data as most of its privatized.
+
+Finally lets take a look at all the variables together, however all of them are different units so it's hard to make a statement however, you can see the correlation between US and CA and a bit in BR and definitely in CH.
+
+![Total Comparisons](https://github.com/slobanwala1/candyology/blob/main/Images/TotalComparisons2004.png)
+
+Since we only have one years worth of data that's the only correlation we can show however clearly there's a relation between these data points thus we should that the null hypothesis is proven wrong.
 
 ### Question Four - What is the relationship between candy consumption and candy production?
 
-Colin enter write up here including graphs in the format below
-![alt text](githublink "alt_text")
+As part of our analysis, we looked at chocolate and confections as a commodity for another analysis into the worldwide consumption of candy . As you can see from our chart, the US is the top importer. The amount of imports increases at a fairly steady rate, except around 2005-2006, when Hurricane Katrina affected sugar production.
+
+![Total Sugar Production 2000-2019](https://github.com/slobanwala1/candyology/blob/main/Images/TotalSugarProductionSum2000To2019.PNG)
+
+In this final chart, we looked at the top three countries producing the most sugar and dental visits for 12 year olds. China, the US and Russia are the top sugar-producing countries. What we found is the top producing country, although it doesn’t appear that they consume the most.
+
+![Top 3 Sugar Production 2000-2019](https://github.com/slobanwala1/candyology/blob/main/Images/Top3SugarProductionSum2000To2019.PNG)
 
 ### Data limitations & Further discussions
-*Finding data was a challenge - privately owned or very expensive
-*Lots of conflicting data - different owners mean different bias
-*Would like to do more comparisons with dental data and other health issues and get hands on more broad candy purchasing data
+* Finding data was a challenge - privately owned or very expensive
+* Lots of conflicting data - different owners mean different bias
+* Would like to do more comparisons with dental data and other health issues and get hands on more broad candy purchasing data
 
 ### Presentation Link
 Find linked visual support for data presentation from 10/31/2020 - https://docs.google.com/presentation/d/1vw6C9iiEpf2EX1O7sxGdaLwSNd-_ESP2WSKsJGiv1ys/edit?usp=sharing
